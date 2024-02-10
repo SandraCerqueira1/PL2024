@@ -4,7 +4,7 @@
 
 <h3 align="center">Licenciatura em Engenharia Informática <br> Trabalhos de casa de Processamento de Linguagens <br> 2023/2024 </h3>
 
-<h3 align="center"> Autor &#129309 </h2>
+<h3 align="center"> Autor :floppy_disk: </h2>
 
 <div align="center">
 
