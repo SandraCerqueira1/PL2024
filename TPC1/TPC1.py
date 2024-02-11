@@ -27,25 +27,25 @@ class AnalisadorCSV:
                 inaptos += 1
 
             # Recolha das idades para a distribuição etária
-            idade = int(line[5])  # Considerando idade mínima de 30 anos
+            idade = int(line[5])
             idades.append(idade)
 
-        # Calculando percentagens de aptos e inaptos
+        # Calcula as percentagens de aptos e inaptos
         total_atletas = len(dataset)
         percent_aptos = (aptos / total_atletas) * 100
         percent_inaptos = (inaptos / total_atletas) * 100
 
-        # Ordenando modalidades alfabeticamente
+        # Ordena as modalidades por ordem alfabetica
         modalidades_ordenadas = sorted(modalidades)
 
-        # Criando distribuição de atletas por escalão etário
+        # Criação da distribuição de atletas por escalão etário
         escaloes = defaultdict(int)
 
         for idade in idades:
             escalao = (idade // 5) * 5
             escaloes[escalao] += 1
 
-        # Ordenando as chaves do dicionário para imprimir em ordem
+        # Ordena as chaves do dicionário para imprimir por ordem
         escaloes_ordenados = sorted(escaloes.items())
 
         self.modalidades_ordenadas = modalidades_ordenadas
