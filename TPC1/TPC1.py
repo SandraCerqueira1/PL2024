@@ -1,6 +1,8 @@
+from collections import defaultdict
+
 class AnalisadorCSV:
     def __init__(self, file_path: str):
-        with open(file_path) as f:
+        with open(file_path, encoding='utf-8') as f:
             linhas = f.readlines()
 
         dataset = [linha.replace('\n', '').split(',') for linha in linhas]
@@ -37,21 +39,27 @@ class AnalisadorCSV:
         modalidades_ordenadas = sorted(modalidades)
 
         # Criando distribuição de atletas por escalão etário
-        idades.sort()
-        escaloes = {}
+        escaloes = defaultdict(int)
+
         for idade in idades:
-            if idade >= 30:
-                escalao = (idade // 5) * 5
-                escaloes[escalao] = escaloes.get(escalao, 0) + 1
+            escalao = (idade // 5) * 5
+            escaloes[escalao] += 1
+
+        # Ordenando as chaves do dicionário para imprimir em ordem
+        escaloes_ordenados = sorted(escaloes.items())
 
         self.modalidades_ordenadas = modalidades_ordenadas
         self.percent_aptos = percent_aptos
         self.percent_inaptos = percent_inaptos
-        self.escaloes_etarios = escaloes
+        self.escaloes_etarios = escaloes_ordenados
 
 # Exemplo de uso
 analise = AnalisadorCSV('emd.csv')
 print("Modalidades:", analise.modalidades_ordenadas)
 print("Percentagem de Aptos:", analise.percent_aptos)
 print("Percentagem de Inaptos:", analise.percent_inaptos)
-print("Distribuição de Idade:", analise.escaloes_etarios)
+
+# Chama a função para imprimir a distribuição por escalão etário
+print("Distribuição por escalão etário:")
+for escalao, quantidade in analise.escaloes_etarios:
+    print(f"{escalao}-{escalao+4}: {quantidade} atletas")
