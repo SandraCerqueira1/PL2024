@@ -1,18 +1,23 @@
-<p align="center">
-  <img src='https://lh3.googleusercontent.com/proxy/qiPnAyFHI2AWzyddfi9niSCQE0fDE7jJ4RfO_dsOD-znzidczUfqccluhuXEmfIgvf64ixvJz2-gTvIF0-ZzqXJ22XwOnaJrsSMs9rvCFtW4Yx2W2-fk7Rk' width="30%" />
-</p>
+# TPC1: Análise de um dataset
+## 2024-02-11
 
-<h3 align="center">Licenciatura em Engenharia Informática <br> Trabalhos de casa de Processamento de Linguagens <br> 2023/2024 </h3>
+## Autor
 
-<h3 align="center"> Autor &#129309 </h2>
+- A100681
+- Sandra Fabiana Pires Cerqueira
 
-<div align="center">
+## Resumo
 
-| Nome                           |  Número |
-|--------------------------------|---------|
-| Sandra Fabiana Pires Cerqueira | A100681 |
+Para este trabalho utilizou-se como base um ficheiro csv para gerar algumas estatísticas acerca das informações presentes no mesmo.
 
-</div>
+Para isso, foi necessário ler o ficheiro csv linha a linha, separar os diferentes campos e guardar as informações relevantes às estatísticas pretendidas.
 
+As estatísticas apresentadas são as seguintes:
+
+* Lista ordenada alfabeticamente das modalidades;
+
+* Percenteagem de atletas aptos e inaptos;
+
+*Distribuição de atletas por escalão etário (escalão = intervalo de 5 anos): ... [30-34], [35-39], ...
 
 
