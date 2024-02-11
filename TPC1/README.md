@@ -18,6 +18,6 @@ As estatísticas apresentadas são as seguintes:
 
 * Percenteagem de atletas aptos e inaptos;
 
-*Distribuição de atletas por escalão etário (escalão = intervalo de 5 anos): ... [30-34], [35-39], ...
+* Distribuição de atletas por escalão etário (escalão = intervalo de 5 anos): ... [30-34], [35-39], ...
 
 
