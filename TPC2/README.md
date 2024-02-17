@@ -1,5 +1,5 @@
-# TPC1: Análise de um dataset
-## 11/02/2024
+# TPC2: Análise de um dataset
+## 17/02/2024
 
 ## Autor
 
@@ -7,18 +7,34 @@
 - Sandra Fabiana Pires Cerqueira
 
 ## Resumo
+Este projeto é um conversor simples de MarkDown para HTML, focado nos elementos descritos na "Basic Syntax" da Cheat Sheet. 
 
-Para este trabalho utilizou-se como base um ficheiro csv para gerar algumas estatísticas acerca das informações presentes no mesmo.
+## Funcionalidades
 
-Para isso, foi necessário ler o ficheiro csv linha a linha, separar os diferentes campos e guardar as informações necessárias das estatísticas que pretendemos obter.
+- **Cabeçalhos:**
+  - Transforma as linhas iniciadas por `#`, `##` e `###` em `<h1>`, `<h2>` e `<h3>`, respetivamente.
 
-As estatísticas apresentadas são as seguintes:
+- **Negrito e Itálico:**
+  - Converte pedaços de texto entre `**` em `<b>` e `</b>`.
+  - Converte pedaços de texto entre `*` em `<i>` e `</i>`.
 
-* Lista ordenada alfabeticamente das modalidades;
+- **Linha Horizontal:**
+  - Substitui sequências `---` por `<hr/>`.
 
-* Percenteagem de atletas aptos e inaptos;
+- **Bloco de Código:**
+  - Transforma trechos entre crases (``) em `<code>` e `</code>`.
 
-* Distribuição de atletas por escalão etário (escalão = intervalo de 5 anos): ... [30-34], [35-39], ...
+- **Listas Numeradas e Não Numeradas:**
+  - Converte listas numeradas iniciadas por `\d+\.` em `<ol>` e `<li>`.
+  - Converte listas não numeradas iniciadas por `-` em `<ul>` e `<li>`.
 
-* Nota: As estatísticas são apresentadas no terminal ao executar o script.
+- **Imagem:**
+  - Substitui a sintaxe `![alt text](image path)` por `<img src="image path" alt="alt text"/>`.
+
+- **Link:**
+  - Transforma a sintaxe `[link text](URL)` em `<a href="URL">link text</a>`.
+
+## Utilização
+Para correr o código utiliza-se o seguinte comando : python3 script.py
+
 
