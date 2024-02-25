@@ -8,10 +8,28 @@
 
 ## Resumo
 ### Objetivos
-Somador on/off: criar o programa em Python
-Pretende-se um programa que some todas as sequências de dígitos que encontre num texto;
-Sempre que encontrar a string “Off” em qualquer combinação de maiúsculas e minúsculas, esse comportamento é desligado;
-Sempre que encontrar a string “On” em qualquer combinação de maiúsculas e minúsculas, esse comportamento é novamente ligado;
-Sempre que encontrar o caráter “=”, o resultado da soma é colocado na saída.
+**Somador on/off em Python**
+
+O objetivo deste trabalho prático foi criar um programa em Python que funcione como um somador on/off. 
+A ideia era somar todas as sequências de dígitos encontradas num texto, ligando ou desligando esse comportamento com as palavras "On" e "Off", independentemente de estarem em maiúsculas ou minúsculas. Sempre que o  caracter "=" for encontrado, o resultado da soma até o momento é exibido no terminal.
+
 
 ### Resultado
+
+O `comador.py` foi desenvolvido para atender aos requisitos do somador on/off.
+No entanto, há uma limitação relacionada à detecção de "On" e "Off" quando essas palavras estão contidas na mesma palavra (por exemplo, "strogonOFF"). 
+A tentativa de resolver esta limitação não foi bem-sucedida até o momento.
+O código funciona devidamente mas para casos em que on e off nao pertençam à mesma palavra.
+
+Para testar o código utilizei o seguinte comando:
+```bash
+python3 somador.py testar.txt
+```
+Tendo obtido o seguinte resultado para o texto `"24 23 = olaola ON 23 20 -10 = off 14 on 20 = strogon = 10 ="` contido no ficheiro `testar.txt`
+```bash
+A soma até ao "=" número 1 é igual a 0
+A soma até ao "=" número 2 é igual a 33
+A soma até ao "=" número 3 é igual a 53
+A soma até ao "=" número 4 é igual a 53
+A soma até ao "=" número 5 é igual a 63
+```
