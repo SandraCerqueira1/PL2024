@@ -18,8 +18,8 @@ A ideia era somar todas as sequências de dígitos encontradas num texto, ligand
 
 O `comador.py` foi desenvolvido para atender aos requisitos do somador on/off.
 No entanto, há uma limitação relacionada à detecção de "On" e "Off" quando essas palavras estão contidas na mesma palavra (por exemplo, "strogonOFF"). 
-A tentativa de resolver esta limitação não foi bem-sucedida até o momento.
-O código funciona devidamente mas para casos em que on e off nao pertençam à mesma palavra.
+A tentativa de resolver esta limitação não foi bem-sucedida até ao momento.
+O código funciona como previsto mas para casos em que on e off nao pertençam à mesma palavra.
 
 Para testar o código utilizei o seguinte comando:
 ```bash
